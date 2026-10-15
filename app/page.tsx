@@ -1,6 +1,7 @@
 import React from "react";
 import { Masthead } from "@/components/press/Masthead";
 import { FrontPageStack } from "@/components/press/FrontPageStack";
+import { Classifieds } from "@/components/press/Classifieds";
 
 export default function Home() {
   return (
@@ -19,11 +20,14 @@ export default function Home() {
         {/* Front Page Swipeable Editions Stack */}
         <FrontPageStack />
 
+        {/* Intelligence Briefs Classifieds Section */}
+        <Classifieds />
+
         {/* In-Depth Investigative Dispatches Column Grid */}
         <section className="mt-14 border-t-2 border-b-2 border-ink py-8">
           <div className="flex items-center justify-between pb-4 mb-6 border-b border-ink/30">
             <span className="font-mono text-xs uppercase tracking-[0.2em] font-bold text-ink">
-              SECTION B: IN-DEPTH INVESTIGATIVE DOSSIER
+              SECTION D: IN-DEPTH INVESTIGATIVE DOSSIER
             </span>
             <span className="font-mono text-[11px] text-ink-muted">
               VISAKHAPATNAM PRESS WIRE
