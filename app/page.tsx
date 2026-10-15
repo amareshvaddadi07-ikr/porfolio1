@@ -1,5 +1,6 @@
 import React from "react";
 import { Masthead } from "@/components/press/Masthead";
+import { PrintingPressRoller } from "@/components/press/PrintingPressRoller";
 import { FrontPageStack } from "@/components/press/FrontPageStack";
 import { Classifieds } from "@/components/press/Classifieds";
 
@@ -16,6 +17,9 @@ export default function Home() {
         
         {/* Newspaper Masthead */}
         <Masthead />
+
+        {/* Mechanical Printing Press Roller (Scroll-driven Inking & Self-drawing Lines) */}
+        <PrintingPressRoller />
 
         {/* Front Page Swipeable Editions Stack */}
         <FrontPageStack />

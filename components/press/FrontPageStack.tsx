@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence, PanInfo } from "framer-motion";
+import { ParallaxStamp } from "./ParallaxStamp";
 
 export interface ProjectEdition {
   id: string;
@@ -300,10 +301,26 @@ export function FrontPageStack() {
                     </span>
                   </div>
 
-                  {/* Postal Ink Cancellation Mark (Rubber Stamp) */}
-                  <div className="hidden sm:flex items-center gap-2 border border-dashed border-ink/40 px-2.5 py-1 rounded-sm text-[9.5px] font-mono tracking-widest text-ink-muted uppercase">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-700" />
-                    <span>{edition.cancellationText}</span>
+                  {/* Postal Ink Cancellation Mark with Multi-Layer Parallax */}
+                  <div className="hidden sm:block">
+                    <ParallaxStamp
+                      city="VISAKHAPATNAM"
+                      department={
+                        edition.id === "krypton-trace"
+                          ? "FORENSICS BUREAU"
+                          : edition.id === "samarth-os"
+                          ? "PRISON TELEMETRY"
+                          : "GOV ACCESS DEPT"
+                      }
+                      dateStr="15 OCT 2026"
+                      code={
+                        edition.id === "krypton-trace"
+                          ? "FREEZE PROTOCOL"
+                          : edition.id === "samarth-os"
+                          ? "EDGE AI VERIFIED"
+                          : "RBAC RATIFIED"
+                      }
+                    />
                   </div>
                 </div>
 
