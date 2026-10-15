@@ -1,5 +1,6 @@
 import React from "react";
 import { Masthead } from "@/components/press/Masthead";
+import { FrontPageStack } from "@/components/press/FrontPageStack";
 
 export default function Home() {
   return (
@@ -15,15 +16,27 @@ export default function Home() {
         {/* Newspaper Masthead */}
         <Masthead />
 
-        {/* Newspaper Front Page Grid */}
-        <section className="mt-8 border-t-2 border-b-2 border-ink py-6">
+        {/* Front Page Swipeable Editions Stack */}
+        <FrontPageStack />
+
+        {/* In-Depth Investigative Dispatches Column Grid */}
+        <section className="mt-14 border-t-2 border-b-2 border-ink py-8">
+          <div className="flex items-center justify-between pb-4 mb-6 border-b border-ink/30">
+            <span className="font-mono text-xs uppercase tracking-[0.2em] font-bold text-ink">
+              SECTION B: IN-DEPTH INVESTIGATIVE DOSSIER
+            </span>
+            <span className="font-mono text-[11px] text-ink-muted">
+              VISAKHAPATNAM PRESS WIRE
+            </span>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 divide-y md:divide-y-0 md:divide-x divide-ink/20">
             
             {/* Column 1: Blockchain Forensics */}
             <article className="md:col-span-4 pr-0 md:pr-6">
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-[10px] font-mono uppercase bg-ink/10 px-1.5 py-0.5 font-bold tracking-wider">
-                  DISPATCH I
+                  DOSSIER I
                 </span>
                 <span className="text-[10px] font-mono text-ink-muted">· DECENTRALIZED SYSTEMS</span>
               </div>
@@ -45,7 +58,7 @@ export default function Home() {
             <article className="md:col-span-4 px-0 md:px-6 pt-6 md:pt-0">
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-[10px] font-mono uppercase bg-ink/10 px-1.5 py-0.5 font-bold tracking-wider">
-                  DISPATCH II
+                  DOSSIER II
                 </span>
                 <span className="text-[10px] font-mono text-ink-muted">· EDGE VISION INTELLIGENCE</span>
               </div>
@@ -67,7 +80,7 @@ export default function Home() {
             <article className="md:col-span-4 pl-0 md:pl-6 pt-6 md:pt-0">
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-[10px] font-mono uppercase bg-ink/10 px-1.5 py-0.5 font-bold tracking-wider">
-                  DISPATCH III
+                  DOSSIER III
                 </span>
                 <span className="text-[10px] font-mono text-ink-muted">· ZERO-TRUST GOVERNANCE</span>
               </div>
