@@ -1,7 +1,7 @@
 import React from "react";
 import { Masthead } from "@/components/press/Masthead";
 import { PrintingPressRoller } from "@/components/press/PrintingPressRoller";
-import { FrontPageStack } from "@/components/press/FrontPageStack";
+import { FoldedNewspaper3D } from "@/components/press/FoldedNewspaper3D";
 import { Classifieds } from "@/components/press/Classifieds";
 
 export default function Home() {
@@ -21,8 +21,8 @@ export default function Home() {
         {/* Mechanical Printing Press Roller (Scroll-driven Inking & Self-drawing Lines) */}
         <PrintingPressRoller />
 
-        {/* Front Page Swipeable Editions Stack */}
-        <FrontPageStack />
+        {/* 3D Folded Broadsheet Newspaper Scroll Interaction */}
+        <FoldedNewspaper3D />
 
         {/* Intelligence Briefs Classifieds Section */}
         <Classifieds />
